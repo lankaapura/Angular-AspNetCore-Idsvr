@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "idsvr-angular", "web\idsvr-angular.csproj", "{BBD1FC8A-F394-4F1B-AD93-C537616E7C9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		PROD|Any CPU = PROD|Any CPU
+		QA|Any CPU = QA|Any CPU
+		Release|Any CPU = Release|Any CPU
+		STAGE|Any CPU = STAGE|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBD1FC8A-F394-4F1B-AD93-C537616E7C9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBD1FC8A-F394-4F1B-AD93-C537616E7C9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBD1FC8A-F394-4F1B-AD93-C537616E7C9D}.PROD|Any CPU.ActiveCfg = Release|Any CPU
+		{BBD1FC8A-F394-4F1B-AD93-C537616E7C9D}.PROD|Any CPU.Build.0 = Release|Any CPU
+		{BBD1FC8A-F394-4F1B-AD93-C537616E7C9D}.QA|Any CPU.ActiveCfg = Release|Any CPU
+		{BBD1FC8A-F394-4F1B-AD93-C537616E7C9D}.QA|Any CPU.Build.0 = Release|Any CPU
+		{BBD1FC8A-F394-4F1B-AD93-C537616E7C9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBD1FC8A-F394-4F1B-AD93-C537616E7C9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBD1FC8A-F394-4F1B-AD93-C537616E7C9D}.STAGE|Any CPU.ActiveCfg = Release|Any CPU
+		{BBD1FC8A-F394-4F1B-AD93-C537616E7C9D}.STAGE|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C40D6AB5-D9A3-4FA8-8494-EC6977609CF0}
+	EndGlobalSection
+EndGlobal

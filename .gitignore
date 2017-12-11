@@ -1,0 +1,6 @@
+web/node_modules/*
+web/obj/*
+web/bin/*
+.vs/*
+web/wwwroot/dist/*
+web/ClientApp/dist/*
