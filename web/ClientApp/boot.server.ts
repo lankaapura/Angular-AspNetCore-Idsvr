@@ -13,7 +13,8 @@ export default createServerRenderer(params => {
     const providers = [
         { provide: INITIAL_CONFIG, useValue: { document: '<app></app>', url: params.url } },
         { provide: APP_BASE_HREF, useValue: params.baseUrl },
-        { provide: 'BASE_URL', useValue: params.origin + params.baseUrl }
+        { provide: 'BASE_URL', useValue: params.origin + params.baseUrl },
+        { provide: 'cookies', useValue: JSON.stringify(params.data.cookies) }
     ];
 
     return platformDynamicServer(providers).bootstrapModule(AppModule).then(moduleRef => {
