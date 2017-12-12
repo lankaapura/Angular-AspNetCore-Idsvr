@@ -5,25 +5,15 @@ import { OAuthStorage } from "angular-oauth2-oidc";
 export class BrowserTokenStoreService implements OAuthStorage {
 
     getItem(key: string): string {
-        if (typeof sessionStorage !== 'undefined') {
-            return sessionStorage.getItem(key);
-        }
-
-        return '';
+        return this.readCookie(key);
     }
 
     removeItem(key: string): void {
-        if (typeof sessionStorage !== 'undefined') {
-            sessionStorage.removeItem(key);
-            this.removeCookie(key);
-        }
+        this.removeCookie(key);
     }
 
     setItem(key: string, data: string): void {
-        if (typeof sessionStorage !== 'undefined') {
-            sessionStorage.setItem(key, data);
-            this.writeCookie(key, data);
-        }
+        this.writeCookie(key, data);
     }
 
     readCookie(name: string) {
@@ -56,7 +46,7 @@ export class ServerTokenStoreService implements OAuthStorage {
         let cookies = JSON.parse(c);
         this.cookies = new Map<string, string>();
 
-        for (let cookie of cookies) {            
+        for (let cookie of cookies) {
             this.cookies.set(cookie.key, cookie.value);
         }
     }
@@ -69,7 +59,7 @@ export class ServerTokenStoreService implements OAuthStorage {
         return '';
     }
 
-    removeItem(key: string): void {}
+    removeItem(key: string): void { }
 
-    setItem(key: string, data: string): void {}
+    setItem(key: string, data: string): void { }
 }
